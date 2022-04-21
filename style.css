@@ -1,0 +1,74 @@
+body {
+    font-family: Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #EEE;
+    font-size: 16px;
+}
+
+.root {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 920px;
+    min-height: calc(100vh - 40px);
+    background-color: #CCC;
+    color: #333;
+}
+
+.login {
+    display: flex;
+    gap: 10px;
+    margin:5px 0;
+}
+
+
+.main {
+    
+}
+
+.url {
+    display: block;
+    margin: 5px 0;
+    min-width: calc(100% - 5px);
+}
+.json_textarea {
+    width: calc(100% - 20px);
+    display: block;
+    margin: 5px 0;
+    height: 80px;    
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    font-size: 0.9em;
+    font-weight: 400;
+    padding: 10px;
+}
+.get_button {
+    margin: 5px 0;
+    display: inline;
+}
+
+.response_time {
+    margin: 5px 0;
+    display: inline;
+    color: #840;
+    font-size: 0.8em;
+}
+
+.code-wrap {
+    padding: 10px;
+    margin: 5px 0;
+    display: block;
+    background-color: #222;
+    color: #CCC;
+    border-radius: 4px;
+    width: calc(100% - 20px);
+}
+
+.response_text {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    font-size: 0.9em;
+    white-space: pre;
+    font-weight: 400;
+    text-align: left;
+    -moz-tab-size: 4;
+    line-height: 1.0;
+}

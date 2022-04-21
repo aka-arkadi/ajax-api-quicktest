@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title> Ajax Api Test </title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="root">
+        <div class="header">
+            <div class="login">
+                <input type="text" class="login_email" name="login_email" id="login_email" value="smith@example.com">
+                <input type="text" class="login_password" name="login_password" id="login_password" value="password">
+                <button class="login_button" type="button" onClick="login_logout()">LOGIN/LOGOUT</button>
+            </div>
+            <div class="login_status" id="login_status">not logged in</div>
+            <div class="login_roles"></div>
+        </div>
+        <hr>
+        <div class="main">
+            <div class="demo">
+                <input type="text" class="url" id="url" value="http://localhost:8000/api/search/">
+                <textarea class="json_textarea" id="json_textarea">{"viewport":{"lon1":7,"lat1":50,"lon2":8,"lat2":52}}                
+                </textarea>
+                <button class="get_button" type="button" onClick="get_request()">GET</button>
+                <button class="post_button" type="button" onClick="post_request()">POST</button>
+                <button class="put_button" type="button" onClick="put_request()">PUT</button>
+                <button class="delete_button" type="button" onClick="delete_request()">DELETE</button>
+                <div class="response_time" id="response_time"></div>
+                <div class="code-wrap">
+                    <code class="response_text" id="response_text"> Response </code>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
